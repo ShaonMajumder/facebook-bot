@@ -1,0 +1,3 @@
+Storage Optimization: If any people detect in IR sensor , record video and send the video in fb page and upter uloading delete the video in local storage
+Upload sensor data. Temperature
+Send command vaia to home automation to messenger

@@ -1,0 +1,7 @@
+https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow/
+https://stackoverflow.com/questions/18433193/get-user-access-token-on-facebook-api
+https://developers.facebook.com/docs/pages/searching
+https://www.facebook.com/dialog/oauth?client_id=222570995443891&response_type=token&redirect_uri=https://www.facebook.com/connect/login_success.html&scope=pages_show_list,manage_pages,publish_pages
+https://developers.facebook.com/docs/facebook-login/web/login-button
+https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow/#checktoken
+https://dev.to/chorally/permanent-facebook-page-access-token-3epi
