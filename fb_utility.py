@@ -78,7 +78,7 @@ def get_permanant_access_token(client_id,client_secret,access_token):
 		raise ValueError("Getting permanent_user_access_token failed !")
 
 def routine_on_access_error_get_permanent_token(client_id,client_secret,permissions):
-	config = shaonutil.file.read_configuration_ini('config.ini')
+	config = shaonutil.file.read_configuration_ini('private/config.ini')
 	
 
 	access_token = get_access_token_via_dialogue(client_id,permissions)
@@ -94,5 +94,5 @@ def routine_on_access_error_get_permanent_token(client_id,client_secret,permissi
 
 	if(runable):
 		config['fbaccess']['user_access_token'] = permanent_user_access_token
-		shaonutil.file.write_configuration_ini(config, 'config.ini')
+		shaonutil.file.write_configuration_ini(config, 'private/config.ini')
 		print("permanent access_token achieved !")

@@ -30,17 +30,6 @@ def get_post_reach(page_access_token,post_id):
 	print(s_post)
 
 
-
-
-    
-
-
-		
-	
-
-
-
-
 config = shaonutil.file.read_configuration_ini('private/config.ini')
 
 user_id = config['fbaccess']['user_id']
@@ -55,13 +44,7 @@ message_s = 'posted by test app'
 
 # get_access_token_via_dialogue(client_id,'pages_show_list,manage_pages,publish_pages')
 
-
-
-
-
-
 try:
-	routine_on_access_error_get_permanent_token(client_id,client_secret,'pages_show_list,manage_pages,publish_pages')
 	get_post_reach(user_access_token,'105374151053772_108251464099374')
 except Exception as e:
     s = str(e)
@@ -71,16 +54,6 @@ except Exception as e:
 
 # {'error': {'message': 'Error validating access token: The session was invalidated previously using an API call.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'ALveHTVATc4kDV-X7je8jpR'}}
 
-"""
-runable = True
-for pname in ['manage_pages','publish_pages']:
-	if pname not in debug_data['data']['scopes']:
-		runable = False
-
-if(runable):
-	#get_info(page_access_token,page_id,fields = 'id,feed')
-	get_post_reach(permanent_user_access_token,'105374151053772_108251464099374')
-"""
 
 
 """
